@@ -22,6 +22,8 @@ body {
     background: #f5f5f5;
 }
 
+/* NAVBAR */
+
  .logo img {
     width: 190px;
 }
@@ -38,15 +40,16 @@ li {
     align-items: center;
     justify-content:space-between;
     background: #f5f5f5;
+    box-shadow: #000001 0px 4px 8px;
 }
 
 .navbar a {
-    color: #AA4586;
+    color: #db8070;
     font-size: 18px;
 }
 
 .navbar .cart_fav a {
-    color:#dc1a1a;
+    color:#000001;
 }
 
 .menu {
@@ -78,29 +81,115 @@ input[type=checkbox] {
     user-select: none;
 }
 
+/* FIN NAVBAR */
+
+
+/* HERO */
+
+#hero {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img_hero img {
+    height: 400px;
+    padding: 20px;
+}
+
+#hero .hero_title {
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#hero .hero_h2 {
+    font-size: 1.5rem;
+    width: 60%;
+    margin-top: 20px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+#hero p {
+    font-size: 1rem;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.hero_btn {
+    display: block;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border: 2px solid #545454;
+    padding: 10px;
+    
+}
+   
+
+/* END HERO */
+
 /* MEDIA Queries */
+@media (max-width:1024px) {
+    .menu {
+        display: flex;
+        margin-right: 10px;
+        gap: 25px ;
+    }
+
+    .cart_fav {
+        gap: 15px;
+    }
+}
+
+
 
 @media (max-width:769px) {
 
     .navbar {
         width: 100%;
     }
-    .menu {
+    .menu{
         display: none;
         position: absolute;
-        background-color: #000001;
+        background-color: #545454;
+        left: 0;
         right: 0;
-        text-align: center;
+        width: 100%;
+        text-align:justify;
         padding: 20px;
-        margin-top: 20px;
-        height: 100vh;
+        padding-top: 50px;
+        margin-top: 30px;
+        height: 700px;
+        letter-spacing: 2px;
+    }
+
+    .menu li a {
+        color: #000001;
+    }
+
+
+    .cart_fav {
+        display:block;
+        justify-content:center;
+        align-items: center;
+        text-align:justify;
+        padding-left: 20px;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .cart_fav li i {
+        color: #db8070;
     }
 
     .menu li:hover {
         display: inline-block;
-        background-color: #508484;
-        transition: 0.3s ease;
-
     }
 
     .menu li + li {
@@ -109,6 +198,7 @@ input[type=checkbox] {
 
     input[type= checkbox]:checked ~ .menu {
         display: block;
+        transition: 0.3s ease-in;
     }
 
     .hamburguer {
@@ -116,3 +206,4 @@ input[type=checkbox] {
         margin-right: 50px;
     }
 }
+
