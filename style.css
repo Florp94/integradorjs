@@ -66,3 +66,53 @@ li {
     transition: 0.2s ease;
 }
 
+/* responsive nav */
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburguer {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* MEDIA Queries */
+
+@media (max-width:769px) {
+
+    .navbar {
+        width: 100%;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #000001;
+        right: 0;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        height: 100vh;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #508484;
+        transition: 0.3s ease;
+
+    }
+
+    .menu li + li {
+        margin-top: 50px;
+    }
+
+    input[type= checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburguer {
+        display: block;
+        margin-right: 50px;
+    }
+}
