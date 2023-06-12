@@ -185,11 +185,12 @@ input[type=checkbox] {
 
 .service_title {
     color: #f5f5f5;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 0.9rem;
 }
 
 .service_content {
@@ -198,8 +199,7 @@ input[type=checkbox] {
     justify-content: center;
     text-align:center;
     align-items: stretch;
-    margin-top: 20px; 
-    margin-bottom: 50px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 
@@ -210,14 +210,14 @@ input[type=checkbox] {
 }
 
 .service i {
-    font-size: 30px;
+    font-size: 25px;
     color: #db8070;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .service h4 {
     color: #f5f5f5;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -227,13 +227,76 @@ input[type=checkbox] {
     color: #545454;
     display:flex;
     text-align: justify;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     hyphens: auto;
+    letter-spacing: 1px;
 }
 
 
 /* END SERVICE */
 
+/* ABOUT */
+
+#aboutus {
+    margin-top: 1px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.img_about img{
+    height: 400px;
+    margin: 20px;
+    border-radius: 90px;
+    filter: brightness(110%);
+    box-shadow: 0px 4px 4px 2px #545454;
+}
+
+.about_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
+    text-align: justify;
+    padding: 70px;
+}
+
+.about_title h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    
+}
+
+.about_h5 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    hyphens: auto;
+}
+
+.about_p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    hyphens: auto;
+}
+
+.about_btn {
+    margin-top: 20px;
+}
+
+/* END ABOUT */
 /* MEDIA Queries */
 
 @media (max-width:1220px) {
