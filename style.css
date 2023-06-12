@@ -271,9 +271,10 @@ input[type=checkbox] {
 }
 
 .about_title h3 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 4px #545454;
     
 }
 
@@ -288,12 +289,43 @@ input[type=checkbox] {
 .about_p {
     font-size: 1.2rem;
     font-weight: 300;
-    letter-spacing: 1px;
     hyphens: auto;
 }
 
-.about_btn {
+.about_p span {
+    color: #db8070;
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+
+.about_p2 {
     margin-top: 20px;
+}
+
+.about_btn {
+    margin: 0 auto;
+    margin-top: 25px;
+    border: solid 2px #db8070 ;
+    background-color: #db8070;
+    padding: 11px;
+    border-radius: 25px;
+    transition: 0.2s ease;
+    box-shadow: 0px 4px 4px 2px #545454;
+}
+
+.about_btn a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000001;
+    letter-spacing: 1px;
+}
+
+.about_btn:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
 }
 
 /* END ABOUT */
