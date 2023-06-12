@@ -1,3 +1,5 @@
+
+
 @keyframes fade {
     from {
         opacity: 0;
@@ -25,7 +27,32 @@
     }
 }
 
-.hero.title h1 {
-    animation: fade 1s ease-in,
-    slide-up 1.3s ease-in-out;
+#hero .hero_title {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+#hero .hero_h2 {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+#hero p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.hero_btn {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.img_hero img {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
 }
