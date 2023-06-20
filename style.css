@@ -737,9 +737,10 @@ footer {
         font-weight: 600;
     }
 
-    .service_content {
-        width: auto;
+    .img_about img {
+        width:100%;
     }
+    
 
     .service p {
         display: flex;
