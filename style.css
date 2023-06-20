@@ -326,6 +326,7 @@ input[type=checkbox] {
 .about_btn:hover {
     transform: scale(1.1);
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 /* END ABOUT */
@@ -354,7 +355,7 @@ footer {
 .footer_content .footer_card {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 25px;
     color: #db8070;
 }
 
@@ -373,7 +374,7 @@ footer {
 
 .footer_social a {
     color: #db8070;
-    
+    font-size: 0.9rem;
 }
 
 .footer_social i {
@@ -381,6 +382,43 @@ footer {
     margin-left: 5px;
     margin-right: 8px;
 }
+
+.footer_card p {
+    font-size: 1rem;
+}
+
+.footer_card .footer_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_form form p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+} 
+
+.footer_form form label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.footer_form form input {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+
+.footer_card .footer_form input {
+    outline: none;
+}
+
+
+
 
 /* FIN FOOTER */
 /* MEDIA Queries */
