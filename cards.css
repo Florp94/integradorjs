@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     font-family:'Geologica', sans-serif;
-    background: #E4572E;
+    background: #508484;
 }
 
 .logo img {
@@ -96,6 +96,7 @@ input[type=checkbox] {
     margin-top: 120px;
     justify-content: center;
     align-items: center;
+    background-color: #508484;
 }
 
 .container_filter h3 {
@@ -115,11 +116,19 @@ input[type=checkbox] {
 
 .filtro a {
     color: #000001;
+    border: ;
 }
+
+.filtro a:hover {
+    font-size: 1.2rem;
+    
+}
+
+/* FIN PRODUCT FILTER */
 
 .parent {
     margin-top: 50px;
-    background: #E4572E;
+    background: #f5f5f5;
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -134,6 +143,7 @@ input[type=checkbox] {
     padding: 10px 10px 10px;
     border-radius: 5px;
     border: 2px solid ;
+    background-color: #E4572E;
 }
 
 .card_parent:hover {
