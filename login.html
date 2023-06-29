@@ -10,13 +10,13 @@
 </head>
 <body>
     
-    <section>
-        <div class="container_form">
+    
+        <div class="container_form" id="register">
             <div class="information">
                 <div class="info_childs">
                     <h2>Bienvenido</h2>
                     <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
-                    <input type="button" value="Iniciar Sesión">
+                    <input type="button" value="Iniciar Sesión" id="sign_in">
                 </div>
             </div>
             <div class="form_information">
@@ -45,7 +45,41 @@
                 </div>
             </div>
         </div>
-    </section>
+
+
+
+        <div class="container_form hide" id="login">
+            <div class="information">
+                <div class="info_childs">
+                    <h2>¡Bienvenido Nuevamente!</h2>
+                    <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                    <input type="button" value="Registrarse" id="sign_up">
+                </div>
+            </div>
+            <div class="form_information">
+                <div class="form_info_childs">
+                    <h2> Iniciar Sesión</h2>
+                    <div class="icons">
+                        <i class="fa-brands fa-google" style="padding:  10px 11px;"></i>
+                        <i class="fa-brands fa-facebook-f" style="padding:  10px 13px;"></i>
+                    </div>
+                    <p>o iniciar sesión con una cuenta</p>
+                    <form class="form">
+                        <label>
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Correo Electronico">
+                        </label>
+                        <label>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Contraseña">
+                        </label>
+                        <input type="submit" value="Iniciar Sesión">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    
 
 
     <script src="/login.js"></script>
