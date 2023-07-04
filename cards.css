@@ -127,6 +127,10 @@ input[type=checkbox] {
     text-shadow: 1px 1px 4px #545454;
 }
 
+.filtro a:active {
+    text-shadow: 1px 1px 4px #545454;
+}
+
 /* FIN PRODUCT FILTER */
 
 .parent {
