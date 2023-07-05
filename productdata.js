@@ -1,7 +1,7 @@
 const productData = [
     {
         id: 1,
-        name:"Cordoba de 150Grs",
+        name:"Bahia de 150Grs",
         precio: 950.00,
         category: "Hilo",
         cardImg: "/assets/imgproducto/_6708af9a-68dd-4aac-ae1d-1c9be616557f.jpg",
@@ -71,3 +71,22 @@ const productData = [
         cardImg: "/assets/imgproducto/img/combotijaguhiloblanco.jpg",
     },
 ];
+
+
+const divideProductsInParts = (size) => {
+    let productsList = [];
+    for (let i = 0; i < productData.length; i += size) {
+        productsList.push(productData.slice(i, i + size));
+    }
+      return productsList; 
+    };
+
+
+    const appState = {
+        product: divideProductsInParts(6),
+        currentProductsIndex: 0,
+        productsinit: divideProductsInParts(6).length,
+        activeFilter: null,
+    };
+
+

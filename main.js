@@ -1,4 +1,4 @@
-const productContainer = document.querySelector(".parent");
+const productsContainer = document.querySelector(".parent");
 
 const createProductTemplate = (product) => {
     const {id, name, precio, cardImg} = product;
@@ -21,11 +21,11 @@ const createProductTemplate = (product) => {
             <button class="a_compra" data-id="${id}" data-name="${name}" data-precio="${precio}" data-img="${cardImg}" href="#"> <i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
         </div>
     `
-}
+};
 
 const renderProducts = (productsList) => {
-    productContainer.innerHTML = productsList.map(createProductTemplate).join("");
-}
+    productsContainer.innerHTML += productsList.map(createProductTemplate).join("");
+};
 
 
 
@@ -34,7 +34,7 @@ const renderProducts = (productsList) => {
 
 
 const init = () => {
-    renderProducts(productData);
+    renderProducts(appState.product[appState.currentProductsIndex]);
 };
 
 init();
