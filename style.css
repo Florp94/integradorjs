@@ -631,6 +631,10 @@ footer {
     transition: 0.2s;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* FIN FOOTER */
 /* MEDIA Queries */
 
