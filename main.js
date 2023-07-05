@@ -70,7 +70,7 @@ const setShowMoreVisibility = () => {
     showMoreBtn.classList.add("hidden");
 }
 
-const chageFilterState = (btn) => {
+const changeFilterState = (btn) => {
     appState.activeFilter = btn.dataset.category;
     changeBtnActiveState(appState.activeFilter);
     setShowMoreVisibility();
@@ -88,7 +88,7 @@ const applyFilter = ({target}) => {
     if (!isInactiveFilterBtn(target)) {
         return;
     }
-    chageFilterState(target);
+    changeFilterState(target);
 
     productsContainer.innerHTML = "";
     if(appState.activeFilter) {
