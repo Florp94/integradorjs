@@ -503,11 +503,11 @@ input[type=checkbox] {
 }
 
 
-.card_parent .precio_btn h2 {
-    font-size: 1rem;
+.precio_btn h5 {
+    font-size: 1.5rem;
     color: #aa3714;
-    font-weight: 700;
-    
+    font-weight: 500;
+    margin-top: 25px;
 }
 
 .card_parent .precio_btn {
@@ -536,6 +536,7 @@ input[type=checkbox] {
     border: none;
     transition: all 0.3s;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .btn_compra:hover {

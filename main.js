@@ -21,7 +21,7 @@ const createProductTemplate = (product) => {
                 <button>R</button>
             </div>
             <div class="precio_btn">
-                    <h2> ${precio} </h2>
+                    <h5> $ ${precio} </h5>
                     <button class="btn_compra" data-id="${id}" data-name="${name}" data-precio="${precio}" data-img="${cardImg}" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
                 </div>
         </div>
@@ -104,13 +104,16 @@ const applyFilter = ({target}) => {
 };
 
 
+const toggleCart= () => {
 
+};
 
 
 const init = () => {
     renderProducts(appState.product[appState.currentProductsIndex]);
     showMoreBtn.addEventListener("click", showMoreProducts);
     categoriesContainer.addEventListener("click", applyFilter);
+    cartBtn.addEventListener("click", toggleCart);
 };
 
 init();
