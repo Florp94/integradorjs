@@ -20,8 +20,10 @@ const createProductTemplate = (product) => {
                 <button>L</button>
                 <button>R</button>
             </div>
-            <h2> $<span>${precio}</span> </h2>
-            <button class="a_compra" data-id="${id}" data-name="${name}" data-precio="${precio}" data-img="${cardImg}" href="#"> <i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+            <div class="precio_btn">
+                    <h2> ${precio} </h2>
+                    <button class="btn_compra" data-id="${id}" data-name="${name}" data-precio="${precio}" data-img="${cardImg}" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+                </div>
         </div>
     `
 };

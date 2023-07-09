@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cards Product</title>
+  <title>Productos EcoWoolen</title>
   <link rel="stylesheet" href="/cards.css">
   <link rel="stylesheet" href="/Animaciones.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,10 +26,108 @@
                 <li><a href="/login.html">Registrate/Login</a></li>
             </div>
         </ul>
-        <div class="cart_fav">
-          <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
-          <li cart_nav><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-      </div>
+
+        <!-- carrito -->
+
+        <label for="cart_toggle" class="cart_label">
+          <i class="fa-solid fa-cart-arrow-down cart_icon">
+
+          </i>
+        </label>
+        <input type="checkbox" id="cart_toggle">
+
+        <div class="cart">
+          <h2>Tu Carrito</h2>
+
+
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/macramehilolisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Macramé de 150Grs. Algodón 8-6</h3>
+              
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+          <div class="cart_item">
+            <img src="/assets/imgproducto/img/lanashetlandlisto.jpg" alt="img del carrito">
+            <div class="item_info">
+              <h3 class="item_title">Bahia de 150Grs. Algodón 8-6</h3>
+              <span class="item_price">$950.00</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down" >-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+
+            </div>
+          </div>
+
+          <span class="divider"></span>
+
+          <div class="cart_total">
+            <p>Total</p>
+            <span>$950.00</span>
+          </div>
+
+          <button class="btn_add">COMPRAR</button>
+
+        </div>
+
+        <!-- <div class="cart_label">
+          <i class="fa-solid fa-cart-arrow-down">
+            <div class="cart_bubble">
+              0
+            </div>
+          </i>
+      </div> -->
+      
+
         <div class="overlay"></div> 
     </nav>
 </header>
@@ -81,8 +179,9 @@
       </div>
       <div class="precio_btn">
         <h2> $950.00 </h2>
-        <button class="btn_compra" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+        <button class="btn_compra" data-id="id" data-name="name" data-precio="precio" data-img="img" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
       </div>
+
       
     </div>
 

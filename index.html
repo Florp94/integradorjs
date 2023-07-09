@@ -28,8 +28,18 @@
             </ul>
 
             <div class="cart_fav">
-                <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
-                <li cart_nav><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <ul>
+                    <li class="ver_carrito" id="ver_carrito" ><i class="fa-solid fa-cart-arrow-down"></i>
+                    </li>
+                    
+                        
+                        <li cart_nav><i class="fa-solid fa-heart"></i>
+                        </li>
+                   
+                </ul>
+                
+
+                </div>
             </div>
 
             
@@ -104,7 +114,7 @@
                     
                 </div>
                 <div class="about_btn">
-                    <a href="/login.html">Suscribite</a>
+                    <a href="#suscripcion">Suscribite</a>
                 </div>
             </div>
         </div>
@@ -138,10 +148,10 @@
                     <button>Sin Color</button>
         
                 </div>
-                
-                <h2> $500.00 </h2>
-                <button class="a_compra" data-id="id" data-name="name" data-precio="precio" data-img="img" href="#">
-                <i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
+                <div class="precio_btn">
+                    <h2> $950.00 </h2>
+                    <button class="btn_compra" data-id="id" data-name="name" data-precio="precio" data-img="img" href="#"> <i class="fa-solid fa-cart-plus"></i> </button>
+                </div>
             </div>  -->
         </div>
 
@@ -150,6 +160,11 @@
 
     </section>
 
+        <section>
+
+            
+
+        </section>
 
     </main>
 
@@ -178,7 +193,7 @@
 
             <div class="footer_card">
                 <div class="footer_form">
-                    <form action="">
+                    <form action="" id="suscripcion">
                         <h4>Suscribite a Nuestro Newslatter</h4>
                         <p>No te pierdas ninguna promoción</p>
                         <label for="get_email">Ingresa tu Email</label>
@@ -194,6 +209,8 @@
     </footer>
 
     <script src="/productdata.js"></script>
+    <script src="/carrito.js"></script>
     <script src="/main.js"></script>   
+    
 </body>
 </html>
