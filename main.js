@@ -4,9 +4,9 @@ const categoriesContainer = document.querySelector(".categories");
 const categoriesList = document.querySelectorAll(".category");
 const cartMenu = document.querySelector(".cart");
 const menuBtn = document.querySelector("nav_links");
-const bars_menu = document.querySelector(".menu");
+const barsMenu = document.querySelector(".menu");
 const overlay = document.querySelector(".overlay");
-const cartBtn = document.querySelector(".cart_label");
+const cartBtn = document.querySelector(".cart_icon");
 
 
 
@@ -113,10 +113,20 @@ const applyFilter = ({target}) => {
 
 const toggleCart= () => {
     cartMenu.classList.toggle("open_cart");
-    if (bars_menu.classList.contains("open_menu")) {
-        bars_menu.classList.remove("open_menu");
+    if (barsMenu.classList.remove("open_menu")) {
+        barsMenu.classList.contains("open_menu");
         return
-    }
+    };
+
+    overlay.classList.toggle("show_overlay");
+};
+
+const toggleMenu= () => {
+    barsMenu.classList.toggle("open_menu");
+    if (cartMenu.classList.contains("open_cart")) {
+        cartMenu.classList.remove("open_cart");
+        return
+    };
 
     overlay.classList.toggle("show_overlay");
 };
