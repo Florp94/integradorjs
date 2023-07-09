@@ -2,6 +2,13 @@ const productsContainer = document.querySelector(".parent");
 const showMoreBtn = document.querySelector(".btn_load");
 const categoriesContainer = document.querySelector(".categories");
 const categoriesList = document.querySelectorAll(".category");
+const cartMenu = document.querySelector(".cart");
+const menuBtn = document.querySelector("nav_links");
+const bars_menu = document.querySelector(".menu");
+const overlay = document.querySelector(".overlay");
+const cartBtn = document.querySelector(".cart_label");
+
+
 
 const createProductTemplate = (product) => {
     const {id, name, precio, cardImg, category} = product;
@@ -105,7 +112,13 @@ const applyFilter = ({target}) => {
 
 
 const toggleCart= () => {
+    cartMenu.classList.toggle("open_cart");
+    if (bars_menu.classList.contains("open_menu")) {
+        bars_menu.classList.remove("open_menu");
+        return
+    }
 
+    overlay.classList.toggle("show_overlay");
 };
 
 
@@ -114,6 +127,7 @@ const init = () => {
     showMoreBtn.addEventListener("click", showMoreProducts);
     categoriesContainer.addEventListener("click", applyFilter);
     cartBtn.addEventListener("click", toggleCart);
+    menuBtn.addEventListener("click", toggleMenu);
 };
 
 init();
